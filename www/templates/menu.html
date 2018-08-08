@@ -1,0 +1,33 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content  edge-drag-threshold="35">
+        <ion-nav-bar class="bar-assertive-900" align-title="left">
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" class="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" name="navigation">
+        <ion-header-bar class="expanded">
+            <span class="avatar" style="background: url('img/menuLogo.png'); background-size: cover;"></span>
+            <h2 style="/*font-family: nameFont;*/ font-weight: normal;">Campus Dating</h2>
+        </ion-header-bar>
+        <ion-content class="navigation has-expanded-header">
+            <ion-list>
+                <ion-item menu-close ui-sref="app.find">
+                    Find Matches
+                </ion-item>
+                <ion-item menu-close>
+                    Chats &amp; Matches
+                </ion-item>
+                <ion-item menu-close ui-sref="app.profile">
+                    Profile
+                </ion-item>
+                <ion-item menu-close ng-click="logout()">
+                    Logout
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
